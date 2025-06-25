@@ -1,0 +1,128 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+h1.mproject{
+  text-align: center;
+  background-color: #ff9800;
+  margin-top: 0%;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: #333;
+  color: rgb(121, 202, 0);
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  color: #2181bd;
+  margin-right: 15px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.3;
+}
+nav a:hover {
+  background-color: #ddd;
+}
+nav a.active {
+  margin: 10 ;
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+section {
+  background: rgb(245, 242, 60);
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+section:hover {
+  transform: scale(1.02);
+}
+aside {
+  flex: 0 0 250px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  align-self: flex-start;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #35bfd2;
+}
+
+table th {
+  background-color: #f0f0f0;
+}
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 50%;  
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 4px solid #2181bd; 
+}
