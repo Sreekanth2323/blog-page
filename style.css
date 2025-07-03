@@ -26,7 +26,7 @@ header {
   width: 100%;
   padding: 20px;
   background-color: #333;
-  color: rgb(121, 202, 0);
+  /*color: rgb(121, 202, 0);*/
   text-align: center;
 }
 nav a {
@@ -47,7 +47,7 @@ nav a.active {
   font-weight: bold;
 }
 section {
-  background: rgb(245, 242, 60);
+  /*background: rgb(245, 242, 60);*/
   padding: 20px;
   border-radius: 10px;
   flex: 1;
@@ -125,4 +125,49 @@ img {
   margin: 20px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 4px solid #2181bd; 
+}
+
+.filters {
+  margin-bottom: 15px;
+ 
+}
+.filters button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  border: none;
+  background: #0a85a7;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.project {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #000;
+}
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+#themeToggle {
+  margin-inline-start: 90%;
+  padding: 6px 12px;
+  border: none;
+  background: #0c37c5;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  
+}
+#themeToggle:hover {
+  text-decoration: dotted;
 }

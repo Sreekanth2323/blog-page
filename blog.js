@@ -32,3 +32,35 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 });
+
+document.querySelectorAll('.filters button').forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.getAttribute('data-filter');
+    document.querySelectorAll('.project').forEach(project => {
+      const tags = project.getAttribute('data-tags').split(' ');
+      if (filter === 'all' || tags.includes(filter)) {
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
+    });
+  });
+});
+
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+const savedTheme = localStorage.getItem('theme') || 'light';
+body.classList.add(savedTheme);
+
+themeToggle.addEventListener('click', () => {
+  if (body.classList.contains('light')) {
+    body.classList.replace('light', 'dark');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    body.classList.replace('dark', 'light');
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+
